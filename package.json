@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/mstig/Bamazon#readme",
   "dependencies": {
+    "columnify": "^1.5.4",
+    "dotenv": "^6.0.0",
     "inquirer": "^6.0.0",
     "mysql": "^2.16.0"
   }
