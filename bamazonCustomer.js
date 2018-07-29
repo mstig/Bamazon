@@ -21,6 +21,9 @@ var connection = mysql.createConnection({
 
 
 function showAllItems() {
+    console.log("\nWelcome to BAMAZON!");
+    console.log("-----------------------\n")
+    console.log("View available items below:\n")
     connection.query('SELECT * FROM products', function (error, results, fields) {
         if (error) {
             throw error;
@@ -32,8 +35,8 @@ function showAllItems() {
         //npm columnify package to format output & adjust column width
         console.log(columnify(databaseProducts, {
             minWidth: 18
-
         }));
+        console.log("-----------------------\n")
         buyItem(databaseProducts);
     });
 }
